@@ -10,7 +10,7 @@ import UIKit
 
 /// Entry point for the app. Receives app-level event callbacks.
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 }
