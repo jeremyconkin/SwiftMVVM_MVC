@@ -12,7 +12,7 @@ import lowlCore
 class OwlTableViewController: UITableViewController {
 
     private var detailViewController: OwlDetailViewController? = nil
-    private let owlDataSource = OwlDataSource()
+    private let owlDataSource: IOwlDataSource = OwlDataSource()
 
     // MARK: - View Lifecycle
     
@@ -24,6 +24,7 @@ class OwlTableViewController: UITableViewController {
             let controllers = split.viewControllers
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? OwlDetailViewController
             detailViewController?.owlTableViewController = self
+            detailViewController?.owlDataSource = owlDataSource;
         }
     }
 

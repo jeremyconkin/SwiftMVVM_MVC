@@ -23,6 +23,7 @@
 		2559A1BC20688BAF00BB963C /* BirthdayDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2559A19720688B4F00BB963C /* BirthdayDateFormatter.swift */; };
 		2559A1BD20688BB300BB963C /* OwlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF7A6C2068447A00149AAB /* OwlModel.swift */; };
 		2559A1BE20688BB700BB963C /* OwlImageIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF7A6E2068449500149AAB /* OwlImageIdentifier.swift */; };
+		2559A1C02068909600BB963C /* IOwlDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2559A1BF2068909600BB963C /* IOwlDataSource.swift */; };
 		2599D05F20685A0B00E7B45A /* OwlImageIdentifierExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2599D05E20685A0B00E7B45A /* OwlImageIdentifierExtensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,7 @@
 		2559A1A620688BA000BB963C /* lowlCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lowlCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2559A1AD20688BA000BB963C /* lowlCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lowlCoreTests.swift; sourceTree = "<group>"; };
 		2559A1AF20688BA000BB963C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2559A1BF2068909600BB963C /* IOwlDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOwlDataSource.swift; sourceTree = "<group>"; };
 		2599D05E20685A0B00E7B45A /* OwlImageIdentifierExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlImageIdentifierExtensions.swift; sourceTree = "<group>"; };
 		25AF7A6C2068447A00149AAB /* OwlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlModel.swift; sourceTree = "<group>"; };
 		25AF7A6E2068449500149AAB /* OwlImageIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlImageIdentifier.swift; sourceTree = "<group>"; };
@@ -181,10 +183,11 @@
 			isa = PBXGroup;
 			children = (
 				2559A19720688B4F00BB963C /* BirthdayDateFormatter.swift */,
-				25AF7A6C2068447A00149AAB /* OwlModel.swift */,
-				25AF7A6E2068449500149AAB /* OwlImageIdentifier.swift */,
-				2559A1A020688BA000BB963C /* lowlCore.h */,
 				2559A1A120688BA000BB963C /* Info.plist */,
+				2559A1BF2068909600BB963C /* IOwlDataSource.swift */,
+				2559A1A020688BA000BB963C /* lowlCore.h */,
+				25AF7A6E2068449500149AAB /* OwlImageIdentifier.swift */,
+				25AF7A6C2068447A00149AAB /* OwlModel.swift */,
 			);
 			path = lowlCore;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2559A1BE20688BB700BB963C /* OwlImageIdentifier.swift in Sources */,
+				2559A1C02068909600BB963C /* IOwlDataSource.swift in Sources */,
 				2559A1BD20688BB300BB963C /* OwlModel.swift in Sources */,
 				2559A1BC20688BAF00BB963C /* BirthdayDateFormatter.swift in Sources */,
 			);

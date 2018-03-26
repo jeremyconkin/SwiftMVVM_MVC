@@ -15,6 +15,9 @@ class OwlDetailViewController: UIViewController {
     /// Reference to the master table for updating upon data editing
     weak var owlTableViewController: OwlTableViewController?
     
+    /// Owl provider
+    weak var owlDataSource: IOwlDataSource?
+    
     /// Owl of which this page displays details
     var detailOwl: OwlModel? {
         didSet {
@@ -93,7 +96,7 @@ class OwlDetailViewController: UIViewController {
             let newName = nameTextField.text {
             
             let newOwl = detailOwl.CopyWithNewName(newName: newName)
-            OwlDataSource().updateOwl(detailOwl.uniqueIdentifier, updatedOwl: newOwl)
+            owlDataSource?.updateOwl(detailOwl.uniqueIdentifier, updatedOwl: newOwl)
             owlTableViewController?.tableView.reloadData()
         }
     }

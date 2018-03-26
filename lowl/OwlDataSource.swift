@@ -60,25 +60,19 @@ class OwlDataSource {
         
         return owls
     }
+}
+
+extension OwlDataSource: IOwlDataSource {
     
-    /// Return the current collection of owls
-    ///
-    /// - Returns: Array of owl models
     func provideOwls() -> [OwlModel] {
         
         return OwlDataSource.owlDataset
     }
     
-    /// Replace an owl in the dataset
-    ///
-    /// - Parameters:
-    ///   - owlID: UUID of the owl to update
-    ///   - updatedOwl: Replacement owl for owl of owlID
     func updateOwl(_ owlID: UUID, updatedOwl: OwlModel) {
         
         if let owlIndex = OwlDataSource.owlDataset.index(where: {$0.uniqueIdentifier == owlID}) {
             OwlDataSource.owlDataset[owlIndex] = updatedOwl
         }
     }
-    
 }
