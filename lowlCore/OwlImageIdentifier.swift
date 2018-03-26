@@ -19,7 +19,7 @@ import Foundation
 /// - owl7: Image 7
 /// - owl8: Image 8
 /// - owl9: Image 9
-enum OwlImageIdentifier {
+public enum OwlImageIdentifier {
     
     case owl1
     case owl2

@@ -6,7 +6,7 @@
 //  Copyright © 2018 Jeremy Conkin. All rights reserved.
 //
 
-import UIKit
+import lowlCore
 
 extension OwlImageIdentifier {
     

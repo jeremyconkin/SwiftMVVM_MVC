@@ -8,12 +8,12 @@
 
 import Foundation
 
-extension Date {
+public extension Date {
     
     /// Format this date as this app's birthday format string
     ///
     /// - Returns: String birthday
-    func formatAsBirthday() -> String {
+    public func formatAsBirthday() -> String {
         
         let formatter = DateFormatter()
         formatter.dateStyle = .medium

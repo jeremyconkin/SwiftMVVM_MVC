@@ -6,7 +6,7 @@
 //  Copyright © 2018 Jeremy Conkin. All rights reserved.
 //
 
-import Foundation
+import lowlCore
 
 /// Model that represents an owl
 class OwlDataSource {

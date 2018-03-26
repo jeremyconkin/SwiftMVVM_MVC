@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:lowl.xcodeproj">
+      location = "self:/Users/jeremyconkin/Desktop/LOWL/lowl/LowlCore.xcodeproj">
    </FileRef>
 </Workspace>

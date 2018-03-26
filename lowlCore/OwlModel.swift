@@ -9,19 +9,21 @@
 import Foundation
 
 /// Model that describes an own
-struct OwlModel: Equatable {
+public struct OwlModel: Equatable {
     
     /// Identifier unique to this model
-    let uniqueIdentifier: UUID
+    public let uniqueIdentifier: UUID
     
     /// Enum identifier for the owl's headshot
-    let imageIdentifier: OwlImageIdentifier
+    public let imageIdentifier: OwlImageIdentifier
     
     /// The owl's pretty print name
-    let name: String
+    public let name: String
     
     /// The owl's birthday
-    let birthday: Date
+    public let birthday: Date
+    
+    // MARK: Static methods
     
     /// Compare to owls
     ///
@@ -48,11 +50,29 @@ struct OwlModel: Equatable {
                         name: newName,
                         birthday: birthday)
     }
+    
+    /// Default initializer
+    ///
+    /// - Parameters:
+    ///   - uniqueIdentifier: Unique ID
+    ///   - imageIdentifier: Image ID
+    ///   - name: Pretty print name
+    ///   - birthday: Birthday
+    public init(uniqueIdentifier: UUID,
+                imageIdentifier: OwlImageIdentifier,
+                name: String,
+                birthday: Date) {
+        
+        self.uniqueIdentifier = uniqueIdentifier
+        self.imageIdentifier = imageIdentifier
+        self.name = name
+        self.birthday = birthday
+    }
 }
 
 extension OwlModel: Hashable {
     
-    var hashValue: Int {
+    public var hashValue: Int {
         return uniqueIdentifier.hashValue
     }
 }

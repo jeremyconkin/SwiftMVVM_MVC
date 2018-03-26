@@ -14,11 +14,16 @@
 		250FF56D20683094000C582D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 250FF56C20683094000C582D /* Assets.xcassets */; };
 		250FF57020683094000C582D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250FF56E20683094000C582D /* LaunchScreen.storyboard */; };
 		250FF58620683C97000C582D /* PrimarySplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250FF58520683C97000C582D /* PrimarySplitViewController.swift */; };
-		2559A19320685CBA00BB963C /* BirthdayDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2559A19220685CBA00BB963C /* BirthdayDateFormatter.swift */; };
 		2559A1952068600E00BB963C /* OwlDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2559A1942068600E00BB963C /* OwlDataSource.swift */; };
+		2559A1A720688BA000BB963C /* lowlCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2559A19E20688BA000BB963C /* lowlCore.framework */; };
+		2559A1AE20688BA000BB963C /* lowlCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2559A1AD20688BA000BB963C /* lowlCoreTests.swift */; };
+		2559A1B020688BA000BB963C /* lowlCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 2559A1A020688BA000BB963C /* lowlCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2559A1B320688BA000BB963C /* lowlCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2559A19E20688BA000BB963C /* lowlCore.framework */; };
+		2559A1B420688BA000BB963C /* lowlCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2559A19E20688BA000BB963C /* lowlCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2559A1BC20688BAF00BB963C /* BirthdayDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2559A19720688B4F00BB963C /* BirthdayDateFormatter.swift */; };
+		2559A1BD20688BB300BB963C /* OwlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF7A6C2068447A00149AAB /* OwlModel.swift */; };
+		2559A1BE20688BB700BB963C /* OwlImageIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF7A6E2068449500149AAB /* OwlImageIdentifier.swift */; };
 		2599D05F20685A0B00E7B45A /* OwlImageIdentifierExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2599D05E20685A0B00E7B45A /* OwlImageIdentifierExtensions.swift */; };
-		25AF7A6D2068447A00149AAB /* OwlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF7A6C2068447A00149AAB /* OwlModel.swift */; };
-		25AF7A6F2068449500149AAB /* OwlImageIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF7A6E2068449500149AAB /* OwlImageIdentifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +34,42 @@
 			remoteGlobalIDString = 250FF55F20683094000C582D;
 			remoteInfo = lowl;
 		};
+		2559A1A820688BA000BB963C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 250FF55820683094000C582D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2559A19D20688BA000BB963C;
+			remoteInfo = lowlCore;
+		};
+		2559A1AA20688BA000BB963C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 250FF55820683094000C582D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 250FF55F20683094000C582D;
+			remoteInfo = lowl;
+		};
+		2559A1B120688BA000BB963C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 250FF55820683094000C582D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2559A19D20688BA000BB963C;
+			remoteInfo = lowlCore;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2559A1B820688BA000BB963C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2559A1B420688BA000BB963C /* lowlCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		250FF56020683094000C582D /* lowl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lowl.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,8 +83,14 @@
 		250FF57620683094000C582D /* lowlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lowlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		250FF57C20683094000C582D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		250FF58520683C97000C582D /* PrimarySplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimarySplitViewController.swift; sourceTree = "<group>"; };
-		2559A19220685CBA00BB963C /* BirthdayDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayDateFormatter.swift; sourceTree = "<group>"; };
 		2559A1942068600E00BB963C /* OwlDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlDataSource.swift; sourceTree = "<group>"; };
+		2559A19720688B4F00BB963C /* BirthdayDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthdayDateFormatter.swift; sourceTree = "<group>"; };
+		2559A19E20688BA000BB963C /* lowlCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = lowlCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2559A1A020688BA000BB963C /* lowlCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lowlCore.h; sourceTree = "<group>"; };
+		2559A1A120688BA000BB963C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2559A1A620688BA000BB963C /* lowlCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lowlCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2559A1AD20688BA000BB963C /* lowlCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lowlCoreTests.swift; sourceTree = "<group>"; };
+		2559A1AF20688BA000BB963C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2599D05E20685A0B00E7B45A /* OwlImageIdentifierExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlImageIdentifierExtensions.swift; sourceTree = "<group>"; };
 		25AF7A6C2068447A00149AAB /* OwlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlModel.swift; sourceTree = "<group>"; };
 		25AF7A6E2068449500149AAB /* OwlImageIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlImageIdentifier.swift; sourceTree = "<group>"; };
@@ -55,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2559A1B320688BA000BB963C /* lowlCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +112,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2559A19A20688BA000BB963C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2559A1A320688BA000BB963C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2559A1A720688BA000BB963C /* lowlCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -72,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				250FF56220683094000C582D /* lowl */,
+				2559A19F20688BA000BB963C /* lowlCore */,
+				2559A1AC20688BA000BB963C /* lowlCoreTests */,
 				250FF57920683094000C582D /* lowlTests */,
 				250FF56120683094000C582D /* Products */,
 			);
@@ -82,6 +146,8 @@
 			children = (
 				250FF56020683094000C582D /* lowl.app */,
 				250FF57620683094000C582D /* lowlTests.xctest */,
+				2559A19E20688BA000BB963C /* lowlCore.framework */,
+				2559A1A620688BA000BB963C /* lowlCoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,15 +157,12 @@
 			children = (
 				250FF56320683094000C582D /* AppDelegate.swift */,
 				250FF56C20683094000C582D /* Assets.xcassets */,
-				2559A19220685CBA00BB963C /* BirthdayDateFormatter.swift */,
 				250FF57120683094000C582D /* Info.plist */,
 				250FF56E20683094000C582D /* LaunchScreen.storyboard */,
 				250FF56920683094000C582D /* Main.storyboard */,
 				2559A1942068600E00BB963C /* OwlDataSource.swift */,
 				250FF56720683094000C582D /* OwlDetailViewController.swift */,
-				25AF7A6E2068449500149AAB /* OwlImageIdentifier.swift */,
 				2599D05E20685A0B00E7B45A /* OwlImageIdentifierExtensions.swift */,
-				25AF7A6C2068447A00149AAB /* OwlModel.swift */,
 				250FF56520683094000C582D /* OwlTableViewController.swift */,
 				250FF58520683C97000C582D /* PrimarySplitViewController.swift */,
 			);
@@ -114,7 +177,39 @@
 			path = lowlTests;
 			sourceTree = "<group>";
 		};
+		2559A19F20688BA000BB963C /* lowlCore */ = {
+			isa = PBXGroup;
+			children = (
+				2559A19720688B4F00BB963C /* BirthdayDateFormatter.swift */,
+				25AF7A6C2068447A00149AAB /* OwlModel.swift */,
+				25AF7A6E2068449500149AAB /* OwlImageIdentifier.swift */,
+				2559A1A020688BA000BB963C /* lowlCore.h */,
+				2559A1A120688BA000BB963C /* Info.plist */,
+			);
+			path = lowlCore;
+			sourceTree = "<group>";
+		};
+		2559A1AC20688BA000BB963C /* lowlCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				2559A1AD20688BA000BB963C /* lowlCoreTests.swift */,
+				2559A1AF20688BA000BB963C /* Info.plist */,
+			);
+			path = lowlCoreTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2559A19B20688BA000BB963C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2559A1B020688BA000BB963C /* lowlCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		250FF55F20683094000C582D /* lowl */ = {
@@ -124,10 +219,12 @@
 				250FF55C20683094000C582D /* Sources */,
 				250FF55D20683094000C582D /* Frameworks */,
 				250FF55E20683094000C582D /* Resources */,
+				2559A1B820688BA000BB963C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2559A1B220688BA000BB963C /* PBXTargetDependency */,
 			);
 			name = lowl;
 			productName = lowl;
@@ -152,6 +249,43 @@
 			productReference = 250FF57620683094000C582D /* lowlTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2559A19D20688BA000BB963C /* lowlCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2559A1B520688BA000BB963C /* Build configuration list for PBXNativeTarget "lowlCore" */;
+			buildPhases = (
+				2559A19920688BA000BB963C /* Sources */,
+				2559A19A20688BA000BB963C /* Frameworks */,
+				2559A19B20688BA000BB963C /* Headers */,
+				2559A19C20688BA000BB963C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lowlCore;
+			productName = lowlCore;
+			productReference = 2559A19E20688BA000BB963C /* lowlCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2559A1A520688BA000BB963C /* lowlCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2559A1B920688BA000BB963C /* Build configuration list for PBXNativeTarget "lowlCoreTests" */;
+			buildPhases = (
+				2559A1A220688BA000BB963C /* Sources */,
+				2559A1A320688BA000BB963C /* Frameworks */,
+				2559A1A420688BA000BB963C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2559A1A920688BA000BB963C /* PBXTargetDependency */,
+				2559A1AB20688BA000BB963C /* PBXTargetDependency */,
+			);
+			name = lowlCoreTests;
+			productName = lowlCoreTests;
+			productReference = 2559A1A620688BA000BB963C /* lowlCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -171,9 +305,18 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 250FF55F20683094000C582D;
 					};
+					2559A19D20688BA000BB963C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					2559A1A520688BA000BB963C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 250FF55F20683094000C582D;
+					};
 				};
 			};
-			buildConfigurationList = 250FF55B20683094000C582D /* Build configuration list for PBXProject "lowl" */;
+			buildConfigurationList = 250FF55B20683094000C582D /* Build configuration list for PBXProject "LowlCore" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -188,6 +331,8 @@
 			targets = (
 				250FF55F20683094000C582D /* lowl */,
 				250FF57520683094000C582D /* lowlTests */,
+				2559A19D20688BA000BB963C /* lowlCore */,
+				2559A1A520688BA000BB963C /* lowlCoreTests */,
 			);
 		};
 /* End PBXProject section */
@@ -210,6 +355,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2559A19C20688BA000BB963C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2559A1A420688BA000BB963C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -220,12 +379,9 @@
 				2599D05F20685A0B00E7B45A /* OwlImageIdentifierExtensions.swift in Sources */,
 				250FF58620683C97000C582D /* PrimarySplitViewController.swift in Sources */,
 				250FF56820683094000C582D /* OwlDetailViewController.swift in Sources */,
-				25AF7A6D2068447A00149AAB /* OwlModel.swift in Sources */,
 				2559A1952068600E00BB963C /* OwlDataSource.swift in Sources */,
-				25AF7A6F2068449500149AAB /* OwlImageIdentifier.swift in Sources */,
 				250FF56620683094000C582D /* OwlTableViewController.swift in Sources */,
 				250FF56420683094000C582D /* AppDelegate.swift in Sources */,
-				2559A19320685CBA00BB963C /* BirthdayDateFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +392,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2559A19920688BA000BB963C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2559A1BE20688BB700BB963C /* OwlImageIdentifier.swift in Sources */,
+				2559A1BD20688BB300BB963C /* OwlModel.swift in Sources */,
+				2559A1BC20688BAF00BB963C /* BirthdayDateFormatter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2559A1A220688BA000BB963C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2559A1AE20688BA000BB963C /* lowlCoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -243,6 +417,21 @@
 			isa = PBXTargetDependency;
 			target = 250FF55F20683094000C582D /* lowl */;
 			targetProxy = 250FF57720683094000C582D /* PBXContainerItemProxy */;
+		};
+		2559A1A920688BA000BB963C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2559A19D20688BA000BB963C /* lowlCore */;
+			targetProxy = 2559A1A820688BA000BB963C /* PBXContainerItemProxy */;
+		};
+		2559A1AB20688BA000BB963C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 250FF55F20683094000C582D /* lowl */;
+			targetProxy = 2559A1AA20688BA000BB963C /* PBXContainerItemProxy */;
+		};
+		2559A1B220688BA000BB963C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2559A19D20688BA000BB963C /* lowlCore */;
+			targetProxy = 2559A1B120688BA000BB963C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -376,6 +565,7 @@
 		250FF58020683094000C582D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = lowl/Info.plist;
@@ -390,6 +580,7 @@
 		250FF58120683094000C582D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = lowl/Info.plist;
@@ -433,10 +624,86 @@
 			};
 			name = Release;
 		};
+		2559A1B620688BA000BB963C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = lowlCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.denverios.lowlCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2559A1B720688BA000BB963C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = lowlCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.denverios.lowlCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2559A1BA20688BA000BB963C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = lowlCoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.denverios.lowlCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lowl.app/lowl";
+			};
+			name = Debug;
+		};
+		2559A1BB20688BA000BB963C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = lowlCoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.denverios.lowlCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lowl.app/lowl";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		250FF55B20683094000C582D /* Build configuration list for PBXProject "lowl" */ = {
+		250FF55B20683094000C582D /* Build configuration list for PBXProject "LowlCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				250FF57D20683094000C582D /* Debug */,
@@ -459,6 +726,24 @@
 			buildConfigurations = (
 				250FF58320683094000C582D /* Debug */,
 				250FF58420683094000C582D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2559A1B520688BA000BB963C /* Build configuration list for PBXNativeTarget "lowlCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2559A1B620688BA000BB963C /* Debug */,
+				2559A1B720688BA000BB963C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2559A1B920688BA000BB963C /* Build configuration list for PBXNativeTarget "lowlCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2559A1BA20688BA000BB963C /* Debug */,
+				2559A1BB20688BA000BB963C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

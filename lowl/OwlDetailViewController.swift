@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import lowlCore
 
 /// Displays details of a specific owl
 class OwlDetailViewController: UIViewController {
