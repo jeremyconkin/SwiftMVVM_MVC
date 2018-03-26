@@ -1,6 +1,6 @@
 //
 //  OwlDataSource.swift
-//  lowl
+//  lowlShared
 //
 //  Created by Jeremy Conkin on 3/25/18.
 //  Copyright © 2018 Jeremy Conkin. All rights reserved.
@@ -9,7 +9,7 @@
 import lowlCore
 
 /// Model that represents an owl
-class OwlDataSource {
+public class OwlDataSource {
     
     private static let dateFormatter = DateFormatter()
     
@@ -60,16 +60,21 @@ class OwlDataSource {
         
         return owls
     }
+
+    // Default initializer
+    public init() {
+    
+    }
 }
 
 extension OwlDataSource: IOwlDataSource {
     
-    func provideOwls() -> [OwlModel] {
+    public func provideOwls() -> [OwlModel] {
         
         return OwlDataSource.owlDataset
     }
     
-    func updateOwl(_ owlID: UUID, updatedOwl: OwlModel) {
+    public func updateOwl(_ owlID: UUID, updatedOwl: OwlModel) {
         
         if let owlIndex = OwlDataSource.owlDataset.index(where: {$0.uniqueIdentifier == owlID}) {
             OwlDataSource.owlDataset[owlIndex] = updatedOwl

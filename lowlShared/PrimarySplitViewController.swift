@@ -1,6 +1,6 @@
 //
 //  PrimarySplitViewController.swift
-//  lowl
+//  lowlShared
 //
 //  Created by Jeremy Conkin on 3/25/18.
 //  Copyright © 2018 Jeremy Conkin. All rights reserved.
@@ -9,9 +9,9 @@
 import UIKit
 
 /// SplitViewController for this app
-class PrimarySplitViewController: UISplitViewController {
+public class PrimarySplitViewController: UISplitViewController {
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         
         self.delegate = self
         self.preferredDisplayMode = .allVisible
@@ -20,7 +20,7 @@ class PrimarySplitViewController: UISplitViewController {
 
 extension PrimarySplitViewController: UISplitViewControllerDelegate {
     
-    func splitViewController(
+    public func splitViewController(
         _ splitViewController: UISplitViewController,
         collapseSecondary secondaryViewController: UIViewController,
         onto primaryViewController: UIViewController) -> Bool {

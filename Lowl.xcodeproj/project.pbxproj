@@ -11,20 +11,24 @@
 		250FF56620683094000C582D /* OwlTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250FF56520683094000C582D /* OwlTableViewController.swift */; };
 		250FF56820683094000C582D /* OwlDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250FF56720683094000C582D /* OwlDetailViewController.swift */; };
 		250FF56B20683094000C582D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250FF56920683094000C582D /* Main.storyboard */; };
-		250FF56D20683094000C582D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 250FF56C20683094000C582D /* Assets.xcassets */; };
 		250FF57020683094000C582D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250FF56E20683094000C582D /* LaunchScreen.storyboard */; };
-		250FF58620683C97000C582D /* PrimarySplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250FF58520683C97000C582D /* PrimarySplitViewController.swift */; };
-		2559A1952068600E00BB963C /* OwlDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2559A1942068600E00BB963C /* OwlDataSource.swift */; };
 		2559A1A720688BA000BB963C /* lowlCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2559A19E20688BA000BB963C /* lowlCore.framework */; };
 		2559A1AE20688BA000BB963C /* lowlCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2559A1AD20688BA000BB963C /* lowlCoreTests.swift */; };
 		2559A1B020688BA000BB963C /* lowlCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 2559A1A020688BA000BB963C /* lowlCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2559A1B320688BA000BB963C /* lowlCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2559A19E20688BA000BB963C /* lowlCore.framework */; };
-		2559A1B420688BA000BB963C /* lowlCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2559A19E20688BA000BB963C /* lowlCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2559A1BC20688BAF00BB963C /* BirthdayDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2559A19720688B4F00BB963C /* BirthdayDateFormatter.swift */; };
 		2559A1BD20688BB300BB963C /* OwlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF7A6C2068447A00149AAB /* OwlModel.swift */; };
 		2559A1BE20688BB700BB963C /* OwlImageIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF7A6E2068449500149AAB /* OwlImageIdentifier.swift */; };
 		2559A1C02068909600BB963C /* IOwlDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2559A1BF2068909600BB963C /* IOwlDataSource.swift */; };
-		2599D05F20685A0B00E7B45A /* OwlImageIdentifierExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2599D05E20685A0B00E7B45A /* OwlImageIdentifierExtensions.swift */; };
+		25D4E22420689F8C00A33E67 /* lowlShared.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D4E22220689F8C00A33E67 /* lowlShared.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25D4E22720689F8C00A33E67 /* lowlShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D4E22020689F8C00A33E67 /* lowlShared.framework */; };
+		25D4E22820689F8C00A33E67 /* lowlShared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25D4E22020689F8C00A33E67 /* lowlShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		25D4E22C20689F9700A33E67 /* PrimarySplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250FF58520683C97000C582D /* PrimarySplitViewController.swift */; };
+		25D4E22D20689FE200A33E67 /* OwlImageIdentifierExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2599D05E20685A0B00E7B45A /* OwlImageIdentifierExtensions.swift */; };
+		25D4E22F2068A04000A33E67 /* lowlCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2559A19E20688BA000BB963C /* lowlCore.framework */; };
+		25D4E2302068A0B000A33E67 /* OwlDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2559A1942068600E00BB963C /* OwlDataSource.swift */; };
+		25D4E2322068A1AD00A33E67 /* OwlImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25D4E2312068A1AD00A33E67 /* OwlImages.xcassets */; };
+		25D4E2342068A25200A33E67 /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25D4E2332068A25200A33E67 /* AppIcon.xcassets */; };
+		25D4E2352068A33D00A33E67 /* OwlImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25D4E2312068A1AD00A33E67 /* OwlImages.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,12 +53,12 @@
 			remoteGlobalIDString = 250FF55F20683094000C582D;
 			remoteInfo = lowl;
 		};
-		2559A1B120688BA000BB963C /* PBXContainerItemProxy */ = {
+		25D4E22520689F8C00A33E67 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 250FF55820683094000C582D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2559A19D20688BA000BB963C;
-			remoteInfo = lowlCore;
+			remoteGlobalIDString = 25D4E21F20689F8C00A33E67;
+			remoteInfo = lowlShared;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -65,7 +69,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2559A1B420688BA000BB963C /* lowlCore.framework in Embed Frameworks */,
+				25D4E22820689F8C00A33E67 /* lowlShared.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,7 +82,6 @@
 		250FF56520683094000C582D /* OwlTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlTableViewController.swift; sourceTree = "<group>"; };
 		250FF56720683094000C582D /* OwlDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlDetailViewController.swift; sourceTree = "<group>"; };
 		250FF56A20683094000C582D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		250FF56C20683094000C582D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		250FF56F20683094000C582D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		250FF57120683094000C582D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		250FF57620683094000C582D /* lowlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lowlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +99,11 @@
 		2599D05E20685A0B00E7B45A /* OwlImageIdentifierExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlImageIdentifierExtensions.swift; sourceTree = "<group>"; };
 		25AF7A6C2068447A00149AAB /* OwlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlModel.swift; sourceTree = "<group>"; };
 		25AF7A6E2068449500149AAB /* OwlImageIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlImageIdentifier.swift; sourceTree = "<group>"; };
+		25D4E22020689F8C00A33E67 /* lowlShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = lowlShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25D4E22220689F8C00A33E67 /* lowlShared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lowlShared.h; sourceTree = "<group>"; };
+		25D4E22320689F8C00A33E67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25D4E2312068A1AD00A33E67 /* OwlImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = OwlImages.xcassets; sourceTree = "<group>"; };
+		25D4E2332068A25200A33E67 /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2559A1B320688BA000BB963C /* lowlCore.framework in Frameworks */,
+				25D4E22720689F8C00A33E67 /* lowlShared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +137,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		25D4E21C20689F8C00A33E67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25D4E22F2068A04000A33E67 /* lowlCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -139,7 +155,9 @@
 				2559A19F20688BA000BB963C /* lowlCore */,
 				2559A1AC20688BA000BB963C /* lowlCoreTests */,
 				250FF57920683094000C582D /* lowlTests */,
+				25D4E22120689F8C00A33E67 /* lowlShared */,
 				250FF56120683094000C582D /* Products */,
+				25D4E22E2068A04000A33E67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,6 +168,7 @@
 				250FF57620683094000C582D /* lowlTests.xctest */,
 				2559A19E20688BA000BB963C /* lowlCore.framework */,
 				2559A1A620688BA000BB963C /* lowlCoreTests.xctest */,
+				25D4E22020689F8C00A33E67 /* lowlShared.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,15 +177,12 @@
 			isa = PBXGroup;
 			children = (
 				250FF56320683094000C582D /* AppDelegate.swift */,
-				250FF56C20683094000C582D /* Assets.xcassets */,
 				250FF57120683094000C582D /* Info.plist */,
 				250FF56E20683094000C582D /* LaunchScreen.storyboard */,
 				250FF56920683094000C582D /* Main.storyboard */,
-				2559A1942068600E00BB963C /* OwlDataSource.swift */,
 				250FF56720683094000C582D /* OwlDetailViewController.swift */,
-				2599D05E20685A0B00E7B45A /* OwlImageIdentifierExtensions.swift */,
 				250FF56520683094000C582D /* OwlTableViewController.swift */,
-				250FF58520683C97000C582D /* PrimarySplitViewController.swift */,
+				25D4E2332068A25200A33E67 /* AppIcon.xcassets */,
 			);
 			path = lowl;
 			sourceTree = "<group>";
@@ -201,6 +217,26 @@
 			path = lowlCoreTests;
 			sourceTree = "<group>";
 		};
+		25D4E22120689F8C00A33E67 /* lowlShared */ = {
+			isa = PBXGroup;
+			children = (
+				2559A1942068600E00BB963C /* OwlDataSource.swift */,
+				2599D05E20685A0B00E7B45A /* OwlImageIdentifierExtensions.swift */,
+				250FF58520683C97000C582D /* PrimarySplitViewController.swift */,
+				25D4E22220689F8C00A33E67 /* lowlShared.h */,
+				25D4E22320689F8C00A33E67 /* Info.plist */,
+				25D4E2312068A1AD00A33E67 /* OwlImages.xcassets */,
+			);
+			path = lowlShared;
+			sourceTree = "<group>";
+		};
+		25D4E22E2068A04000A33E67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -209,6 +245,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2559A1B020688BA000BB963C /* lowlCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25D4E21D20689F8C00A33E67 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25D4E22420689F8C00A33E67 /* lowlShared.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +271,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				2559A1B220688BA000BB963C /* PBXTargetDependency */,
+				25D4E22620689F8C00A33E67 /* PBXTargetDependency */,
 			);
 			name = lowl;
 			productName = lowl;
@@ -289,6 +333,24 @@
 			productReference = 2559A1A620688BA000BB963C /* lowlCoreTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		25D4E21F20689F8C00A33E67 /* lowlShared */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25D4E22920689F8C00A33E67 /* Build configuration list for PBXNativeTarget "lowlShared" */;
+			buildPhases = (
+				25D4E21B20689F8C00A33E67 /* Sources */,
+				25D4E21C20689F8C00A33E67 /* Frameworks */,
+				25D4E21D20689F8C00A33E67 /* Headers */,
+				25D4E21E20689F8C00A33E67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lowlShared;
+			productName = lowlShared;
+			productReference = 25D4E22020689F8C00A33E67 /* lowlShared.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -317,6 +379,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 250FF55F20683094000C582D;
 					};
+					25D4E21F20689F8C00A33E67 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 250FF55B20683094000C582D /* Build configuration list for PBXProject "Lowl" */;
@@ -336,6 +402,7 @@
 				250FF57520683094000C582D /* lowlTests */,
 				2559A19D20688BA000BB963C /* lowlCore */,
 				2559A1A520688BA000BB963C /* lowlCoreTests */,
+				25D4E21F20689F8C00A33E67 /* lowlShared */,
 			);
 		};
 /* End PBXProject section */
@@ -346,8 +413,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				250FF57020683094000C582D /* LaunchScreen.storyboard in Resources */,
-				250FF56D20683094000C582D /* Assets.xcassets in Resources */,
 				250FF56B20683094000C582D /* Main.storyboard in Resources */,
+				25D4E2352068A33D00A33E67 /* OwlImages.xcassets in Resources */,
+				25D4E2342068A25200A33E67 /* AppIcon.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +440,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		25D4E21E20689F8C00A33E67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25D4E2322068A1AD00A33E67 /* OwlImages.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -379,10 +455,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2599D05F20685A0B00E7B45A /* OwlImageIdentifierExtensions.swift in Sources */,
-				250FF58620683C97000C582D /* PrimarySplitViewController.swift in Sources */,
 				250FF56820683094000C582D /* OwlDetailViewController.swift in Sources */,
-				2559A1952068600E00BB963C /* OwlDataSource.swift in Sources */,
 				250FF56620683094000C582D /* OwlTableViewController.swift in Sources */,
 				250FF56420683094000C582D /* AppDelegate.swift in Sources */,
 			);
@@ -414,6 +487,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		25D4E21B20689F8C00A33E67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25D4E22C20689F9700A33E67 /* PrimarySplitViewController.swift in Sources */,
+				25D4E2302068A0B000A33E67 /* OwlDataSource.swift in Sources */,
+				25D4E22D20689FE200A33E67 /* OwlImageIdentifierExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -432,10 +515,10 @@
 			target = 250FF55F20683094000C582D /* lowl */;
 			targetProxy = 2559A1AA20688BA000BB963C /* PBXContainerItemProxy */;
 		};
-		2559A1B220688BA000BB963C /* PBXTargetDependency */ = {
+		25D4E22620689F8C00A33E67 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2559A19D20688BA000BB963C /* lowlCore */;
-			targetProxy = 2559A1B120688BA000BB963C /* PBXContainerItemProxy */;
+			target = 25D4E21F20689F8C00A33E67 /* lowlShared */;
+			targetProxy = 25D4E22520689F8C00A33E67 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -704,6 +787,52 @@
 			};
 			name = Release;
 		};
+		25D4E22A20689F8C00A33E67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = lowlShared/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.denverios.lowlShared;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		25D4E22B20689F8C00A33E67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = lowlShared/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.denverios.lowlShared;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -748,6 +877,15 @@
 			buildConfigurations = (
 				2559A1BA20688BA000BB963C /* Debug */,
 				2559A1BB20688BA000BB963C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25D4E22920689F8C00A33E67 /* Build configuration list for PBXNativeTarget "lowlShared" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25D4E22A20689F8C00A33E67 /* Debug */,
+				25D4E22B20689F8C00A33E67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

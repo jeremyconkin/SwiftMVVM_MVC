@@ -1,6 +1,6 @@
 //
 //  OwlImageIdentifierExtensions.swift
-//  lowl
+//  lowlShared
 //
 //  Created by Jeremy Conkin on 3/25/18.
 //  Copyright © 2018 Jeremy Conkin. All rights reserved.
@@ -11,7 +11,7 @@ import lowlCore
 extension OwlImageIdentifier {
     
     /// Image corresponding to the image identifier
-    var detailImage: UIImage {
+    public var detailImage: UIImage {
         
         return {
             switch self {
