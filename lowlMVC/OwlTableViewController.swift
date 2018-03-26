@@ -1,6 +1,6 @@
 //
 //  OwlTableViewController.swift
-//  lowl
+//  lowlMVC
 //
 //  Created by Jeremy Conkin on 3/25/18.
 //  Copyright © 2018 Jeremy Conkin. All rights reserved.
