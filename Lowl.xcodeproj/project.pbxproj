@@ -319,7 +319,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 250FF55B20683094000C582D /* Build configuration list for PBXProject "LowlCore" */;
+			buildConfigurationList = 250FF55B20683094000C582D /* Build configuration list for PBXProject "Lowl" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -707,7 +707,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		250FF55B20683094000C582D /* Build configuration list for PBXProject "LowlCore" */ = {
+		250FF55B20683094000C582D /* Build configuration list for PBXProject "Lowl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				250FF57D20683094000C582D /* Debug */,
