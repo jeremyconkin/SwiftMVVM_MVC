@@ -89,7 +89,7 @@ extension DetailViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         stopEditing()
-        viewModel?.setName(name: textField.text)
+        viewModel?.owlName.value = textField.text
         
         return true
     }

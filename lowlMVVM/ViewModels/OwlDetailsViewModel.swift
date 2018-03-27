@@ -8,35 +8,35 @@
 
 import lowlCore
 
+/// View model for the owl details page
 class OwlDetailsViewModel {
     
-    weak var masterDetailViewModel: OwlMasterDetailViewModel?
-    
+    /// Name of the owl
     var owlName = Bindable<String?>("")
-    var owlBirthday = Bindable<String?>("")
-    var imageID = Bindable<OwlImageIdentifier?>(.owl1)
-    var owlModel: OwlModel?
     
-    init(_ owlModel: OwlModel?, masterDetailViewModel: OwlMasterDetailViewModel) {
-        
-        self.owlModel = owlModel
-        self.masterDetailViewModel = masterDetailViewModel
-        
-        if let owlModel = owlModel {
-            
-            owlName.value = owlModel.name
-            owlBirthday.value = owlModel.birthday.formatAsBirthday()
-            imageID.value = owlModel.imageIdentifier
+    /// Birthday of the owl
+    var owlBirthday = Bindable<String?>("")
+    
+    /// Image ID of the owl
+    var imageID = Bindable<OwlImageIdentifier?>(.owl1)
+    
+    /// Model backing the view model
+    var owlModel: OwlModel? {
+        didSet {
+            if let owlModel = owlModel {
+                
+                owlName.value = owlModel.name
+                owlBirthday.value = owlModel.birthday.formatAsBirthday()
+                imageID.value = owlModel.imageIdentifier
+            }
         }
     }
     
-    func setName(name: String?) {
+    /// Default initializer
+    ///
+    /// - Parameter owlModel: Owl
+    init(_ owlModel: OwlModel?) {
         
-        if let owlModel = owlModel {
-            
-            owlName = Bindable<String?>(name)
-            let newOwl = owlModel.CopyWithNewName(newName: name ?? "")
-            masterDetailViewModel?.updateOwl(owlModel.uniqueIdentifier, updatedOwl: newOwl)
-        }
+        self.owlModel = owlModel
     }
 }

@@ -17,8 +17,23 @@ class OwlMasterDetailViewModel {
     /// View controller this model updates
     weak var splitViewController: OwlMVVMMasterDetailViewController?
     
+    /// View model for the master page
+    var masterViewModel: OwlMasterViewModel?
+    
     /// View model for the details page
-    var detailsModel: OwlDetailsViewModel?
+    var detailsViewModel: OwlDetailsViewModel?
+    
+    private var selectedModelUUID: UUID?
+    
+    private var selectedOwlName: String? {
+        didSet {
+            if let selectedModelUUID = selectedModelUUID,
+                let selectedOwlName = selectedOwlName {
+                
+                updateOwlName(selectedModelUUID, newName: selectedOwlName)
+            }
+        }
+    }
     
     /// Default initializer
     ///
@@ -29,7 +44,14 @@ class OwlMasterDetailViewModel {
         
         self.owlDataSource = owlDataSource
         self.splitViewController = splitViewController
-        self.detailsModel = OwlDetailsViewModel(nil, masterDetailViewModel: self)
+        self.masterViewModel = OwlMasterViewModel(self)
+        self.detailsViewModel = OwlDetailsViewModel(nil)
+        
+        // Bind to details model changes
+        let bond = Binding<String?>() { [unowned self] newValue in
+            self.selectedOwlName = newValue
+        }
+        self.detailsViewModel?.owlName.bind(binding: bond)
     }
     
     /// Show detail page for an owl
@@ -37,15 +59,31 @@ class OwlMasterDetailViewModel {
     /// - Parameter owlIndex: Index of owl to select
     func showOwlDetails(owlIndex: Int) {
         
-        if let detailsModel = detailsModel {
+        if let detailsModel = detailsViewModel {
             
             detailsModel.owlModel = owlDataSource.provideOwls()[owlIndex]
+            selectedModelUUID = detailsModel.owlModel?.uniqueIdentifier
+            
             if let splitViewController = splitViewController,
                 let detailVC = splitViewController.detailVC {
                 
-                detailVC.viewModel = OwlDetailsViewModel(owlDataSource.provideOwls()[owlIndex], masterDetailViewModel: self)
+                detailVC.viewModel = detailsModel
                 splitViewController.showDetailViewController(detailVC, sender: nil)
             }
+        }
+    }
+    
+    /// Update the give owl's name
+    ///
+    /// - Parameters:
+    ///   - owlID: ID of given owl
+    ///   - newName: New name for the owl
+    func updateOwlName(_ owlID: UUID, newName: String) {
+        
+        let owlModel = owlDataSource.provideOwls().filter({ owl in owl.uniqueIdentifier == owlID}).first
+        if let owlModel = owlModel {
+            let newOwl = owlModel.CopyWithNewName(newName: newName)
+            updateOwl(owlID, updatedOwl: newOwl)
         }
     }
     

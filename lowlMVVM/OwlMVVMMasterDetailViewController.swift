@@ -24,13 +24,12 @@ public class OwlMVVMMasterDetailViewController: UISplitViewController {
         viewModel = OwlMasterDetailViewModel(OwlDataSource(), splitViewController: self)
         
         masterVC = (viewControllers[0] as! UINavigationController).topViewController as? MasterViewController
-        
         detailVC = (viewControllers[1] as! UINavigationController).topViewController as? DetailViewController
         
         if let viewModel = viewModel {
             
-            masterVC?.viewModel = OwlMasterViewModel(viewModel)
-            detailVC?.viewModel = OwlDetailsViewModel(nil, masterDetailViewModel: viewModel)
+            masterVC?.viewModel = viewModel.masterViewModel
+            detailVC?.viewModel = viewModel.detailsViewModel
         }
     }
 }
