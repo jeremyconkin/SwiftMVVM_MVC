@@ -13,19 +13,9 @@ import lowlShared
 /// Displays details of a specific owl
 class DetailViewController: UIViewController {
     
-    /// Reference to the master table for updating upon data editing
-    weak var masterViewController: MasterViewController?
-    
-    /// Owl provider
-    weak var owlDataSource: IOwlDataSource?
-    
-    /// Owl of which this page displays details
-    var detailOwl: OwlModel? {
+    var viewModel: OwlDetailsViewModel? {
         didSet {
-            
-            if isViewLoaded {
-                configureView()
-            }
+            setupBindings()
         }
     }
     
@@ -51,7 +41,8 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        configureView()
+        showDetails(false)
+        setupBindings()
     }
     
     /// Start editing the owl details
@@ -61,45 +52,35 @@ class DetailViewController: UIViewController {
         nameTextField.becomeFirstResponder()
     }
     
-    private func configureView() {
+    private func setupBindings() {
         
-        if let detail = detailOwl {
+        if !isViewLoaded {
+            return
+        }
+        
+        if let viewModel = viewModel {
             
-            nameTextField.text = detail.name
-            birthdayLabel.text = detail.birthday.formatAsBirthday()
-            owlHeadshotImageView.image = detail.imageIdentifier.detailImage
-            
-            title = detail.name
-            showDetails(show: true)
-        } else {
-            showDetails(show: false)
+            nameTextField ->> viewModel.owlName
+            birthdayLabel ->> viewModel.owlBirthday
+            owlHeadshotImageView ->> viewModel.imageID
+            showDetails(true)
         }
     }
     
-    private func showDetails(show: Bool) {
+    private func showDetails(_ show: Bool) {
         
-        nameTextField.isHidden = !show
-        birthdayLabel.isHidden = !show
-        birthdayStaticTextLabel.isHidden = !show
-        owlHeadshotImageView.isHidden = !show
-        editButton.isHidden = !show
+        let isHidden = !show || (viewModel == nil) || (viewModel!.owlModel == nil)
+        nameTextField.isHidden = isHidden
+        birthdayLabel.isHidden = isHidden
+        birthdayStaticTextLabel.isHidden = isHidden
+        owlHeadshotImageView.isHidden = isHidden
+        editButton.isHidden = isHidden
     }
     
     private func stopEditing() {
         
         nameTextField.resignFirstResponder()
         nameTextField.isEnabled = false
-    }
-    
-    private func updateOwlDetails() {
-        
-        if let detailOwl = detailOwl,
-            let newName = nameTextField.text {
-            
-            let newOwl = detailOwl.CopyWithNewName(newName: newName)
-            owlDataSource?.updateOwl(detailOwl.uniqueIdentifier, updatedOwl: newOwl)
-            masterViewController?.tableView.reloadData()
-        }
     }
 }
 
@@ -108,7 +89,7 @@ extension DetailViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         stopEditing()
-        updateOwlDetails()
+        viewModel?.setName(name: textField.text)
         
         return true
     }

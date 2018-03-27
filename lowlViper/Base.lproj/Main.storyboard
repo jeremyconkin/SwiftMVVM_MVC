@@ -47,6 +47,9 @@
                                     <constraint firstAttribute="height" constant="50" id="w7x-n0-Pd7"/>
                                 </constraints>
                                 <state key="normal" title="Edit"/>
+                                <connections>
+                                    <action selector="enterEditMode" destination="JEX-9P-axG" eventType="touchUpInside" id="R6W-YN-5Sh"/>
+                                </connections>
                             </button>
                             <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="01/01/99" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="bjR-1Z-OsZ">
                                 <rect key="frame" x="128" y="162" width="68" height="21"/>

@@ -48,6 +48,26 @@
 		25D4E2852068B18700A33E67 /* lowlShared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25D4E22020689F8C00A33E67 /* lowlShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		25D4E2892068B18D00A33E67 /* lowlShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D4E22020689F8C00A33E67 /* lowlShared.framework */; };
 		25D4E28A2068B18D00A33E67 /* lowlShared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25D4E22020689F8C00A33E67 /* lowlShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		25D4E2902068B71F00A33E67 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D4E28F2068B71F00A33E67 /* Observable.swift */; };
+		25D4E2912068B71F00A33E67 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D4E28F2068B71F00A33E67 /* Observable.swift */; };
+		25D4E2962069C72E00A33E67 /* OwlDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D4E2952069C72E00A33E67 /* OwlDetailsViewModel.swift */; };
+		25D4E2972069C72E00A33E67 /* OwlDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D4E2952069C72E00A33E67 /* OwlDetailsViewModel.swift */; };
+		25D4E2992069D74100A33E67 /* UIBindingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D4E2982069D74100A33E67 /* UIBindingExtensions.swift */; };
+		25D4E29A2069D74100A33E67 /* UIBindingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D4E2982069D74100A33E67 /* UIBindingExtensions.swift */; };
+		25D4E29C2069ECE000A33E67 /* OwlMasterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D4E29B2069ECE000A33E67 /* OwlMasterDetailViewModel.swift */; };
+		25D4E29D2069ECE000A33E67 /* OwlMasterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D4E29B2069ECE000A33E67 /* OwlMasterDetailViewModel.swift */; };
+		25D4E29F2069EE2500A33E67 /* OwlMVVMMasterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D4E29E2069EE2500A33E67 /* OwlMVVMMasterDetailViewController.swift */; };
+		25D4E2A02069EE2500A33E67 /* OwlMVVMMasterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D4E29E2069EE2500A33E67 /* OwlMVVMMasterDetailViewController.swift */; };
+		25D4E2A22069F3F400A33E67 /* OwlMasterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D4E2A12069F3F400A33E67 /* OwlMasterViewModel.swift */; };
+		25D4E2A32069F3F400A33E67 /* OwlMasterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D4E2A12069F3F400A33E67 /* OwlMasterViewModel.swift */; };
+		25D4E2A5206A077800A33E67 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D4E2A4206A077800A33E67 /* Bindable.swift */; };
+		25D4E2A6206A077800A33E67 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D4E2A4206A077800A33E67 /* Bindable.swift */; };
+		25D4E2A8206A081900A33E67 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D4E2A7206A081900A33E67 /* Binding.swift */; };
+		25D4E2A9206A081900A33E67 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D4E2A7206A081900A33E67 /* Binding.swift */; };
+		25D4E2AB206A08C400A33E67 /* OwlTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D4E2AA206A08C400A33E67 /* OwlTableViewCell.swift */; };
+		25D4E2AC206A08C400A33E67 /* OwlTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D4E2AA206A08C400A33E67 /* OwlTableViewCell.swift */; };
+		25D4E2AE206A08F200A33E67 /* OwlTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D4E2AD206A08F200A33E67 /* OwlTableViewCellViewModel.swift */; };
+		25D4E2AF206A08F200A33E67 /* OwlTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D4E2AD206A08F200A33E67 /* OwlTableViewCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -194,6 +214,16 @@
 		25D4E2712068AD2700A33E67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25D4E2762068AD2700A33E67 /* lowlViperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lowlViperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25D4E27C2068AD2700A33E67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25D4E28F2068B71F00A33E67 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		25D4E2952069C72E00A33E67 /* OwlDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlDetailsViewModel.swift; sourceTree = "<group>"; };
+		25D4E2982069D74100A33E67 /* UIBindingExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBindingExtensions.swift; sourceTree = "<group>"; };
+		25D4E29B2069ECE000A33E67 /* OwlMasterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlMasterDetailViewModel.swift; sourceTree = "<group>"; };
+		25D4E29E2069EE2500A33E67 /* OwlMVVMMasterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlMVVMMasterDetailViewController.swift; sourceTree = "<group>"; };
+		25D4E2A12069F3F400A33E67 /* OwlMasterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlMasterViewModel.swift; sourceTree = "<group>"; };
+		25D4E2A4206A077800A33E67 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		25D4E2A7206A081900A33E67 /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
+		25D4E2AA206A08C400A33E67 /* OwlTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlTableViewCell.swift; sourceTree = "<group>"; };
+		25D4E2AD206A08F200A33E67 /* OwlTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlTableViewCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -369,12 +399,19 @@
 			isa = PBXGroup;
 			children = (
 				25D4E23C2068A46A00A33E67 /* AppDelegate.swift */,
-				25D4E23E2068A46A00A33E67 /* MasterViewController.swift */,
-				25D4E2402068A46A00A33E67 /* DetailViewController.swift */,
-				25D4E2422068A46A00A33E67 /* Main.storyboard */,
 				25D4E2452068A46A00A33E67 /* Assets.xcassets */,
-				25D4E2472068A46A00A33E67 /* LaunchScreen.storyboard */,
+				25D4E2A4206A077800A33E67 /* Bindable.swift */,
+				25D4E2A7206A081900A33E67 /* Binding.swift */,
+				25D4E2402068A46A00A33E67 /* DetailViewController.swift */,
 				25D4E24A2068A46A00A33E67 /* Info.plist */,
+				25D4E2472068A46A00A33E67 /* LaunchScreen.storyboard */,
+				25D4E2422068A46A00A33E67 /* Main.storyboard */,
+				25D4E23E2068A46A00A33E67 /* MasterViewController.swift */,
+				25D4E28F2068B71F00A33E67 /* Observable.swift */,
+				25D4E29E2069EE2500A33E67 /* OwlMVVMMasterDetailViewController.swift */,
+				25D4E2982069D74100A33E67 /* UIBindingExtensions.swift */,
+				25D4E28E2068B1E500A33E67 /* ViewModels */,
+				25D4E2AA206A08C400A33E67 /* OwlTableViewCell.swift */,
 			);
 			path = lowlMVVM;
 			sourceTree = "<group>";
@@ -408,6 +445,17 @@
 				25D4E27C2068AD2700A33E67 /* Info.plist */,
 			);
 			path = lowlViperTests;
+			sourceTree = "<group>";
+		};
+		25D4E28E2068B1E500A33E67 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				25D4E2952069C72E00A33E67 /* OwlDetailsViewModel.swift */,
+				25D4E29B2069ECE000A33E67 /* OwlMasterDetailViewModel.swift */,
+				25D4E2A12069F3F400A33E67 /* OwlMasterViewModel.swift */,
+				25D4E2AD206A08F200A33E67 /* OwlTableViewCellViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -806,7 +854,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25D4E2A5206A077800A33E67 /* Bindable.swift in Sources */,
+				25D4E29F2069EE2500A33E67 /* OwlMVVMMasterDetailViewController.swift in Sources */,
+				25D4E2902068B71F00A33E67 /* Observable.swift in Sources */,
+				25D4E2A8206A081900A33E67 /* Binding.swift in Sources */,
+				25D4E29C2069ECE000A33E67 /* OwlMasterDetailViewModel.swift in Sources */,
+				25D4E2992069D74100A33E67 /* UIBindingExtensions.swift in Sources */,
+				25D4E2AE206A08F200A33E67 /* OwlTableViewCellViewModel.swift in Sources */,
+				25D4E2AB206A08C400A33E67 /* OwlTableViewCell.swift in Sources */,
+				25D4E2962069C72E00A33E67 /* OwlDetailsViewModel.swift in Sources */,
 				25D4E2412068A46A00A33E67 /* DetailViewController.swift in Sources */,
+				25D4E2A22069F3F400A33E67 /* OwlMasterViewModel.swift in Sources */,
 				25D4E23F2068A46A00A33E67 /* MasterViewController.swift in Sources */,
 				25D4E23D2068A46A00A33E67 /* AppDelegate.swift in Sources */,
 			);
@@ -816,7 +874,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25D4E2A02069EE2500A33E67 /* OwlMVVMMasterDetailViewController.swift in Sources */,
+				25D4E2912068B71F00A33E67 /* Observable.swift in Sources */,
+				25D4E2AF206A08F200A33E67 /* OwlTableViewCellViewModel.swift in Sources */,
+				25D4E2AC206A08C400A33E67 /* OwlTableViewCell.swift in Sources */,
+				25D4E2A6206A077800A33E67 /* Bindable.swift in Sources */,
+				25D4E29A2069D74100A33E67 /* UIBindingExtensions.swift in Sources */,
+				25D4E2A9206A081900A33E67 /* Binding.swift in Sources */,
+				25D4E2972069C72E00A33E67 /* OwlDetailsViewModel.swift in Sources */,
 				25D4E2542068A46B00A33E67 /* lowlMVVMTests.swift in Sources */,
+				25D4E2A32069F3F400A33E67 /* OwlMasterViewModel.swift in Sources */,
+				25D4E29D2069ECE000A33E67 /* OwlMasterDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

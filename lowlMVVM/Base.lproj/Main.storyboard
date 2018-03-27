@@ -61,6 +61,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="done" textContentType="name"/>
+                                <connections>
+                                    <outlet property="delegate" destination="JEX-9P-axG" id="Rby-cG-iML"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Lb-YM-FhK">
                                 <rect key="frame" x="16" y="575" width="343" height="50"/>
@@ -68,6 +71,9 @@
                                     <constraint firstAttribute="height" constant="50" id="v0U-fC-yIO"/>
                                 </constraints>
                                 <state key="normal" title="Edit"/>
+                                <connections>
+                                    <action selector="enterEditMode" destination="JEX-9P-axG" eventType="touchUpInside" id="Is0-G4-UsO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -103,10 +109,10 @@
             </objects>
             <point key="canvasLocation" x="709" y="129"/>
         </scene>
-        <!--Primary Split View Controller-->
+        <!--OwlMVVM Master Detail View Controller-->
         <scene sceneID="Nki-YV-4Qg">
             <objects>
-                <splitViewController id="H1p-Uh-vWS" customClass="PrimarySplitViewController" customModule="lowlShared" sceneMemberID="viewController">
+                <splitViewController id="H1p-Uh-vWS" customClass="OwlMVVMMasterDetailViewController" customModule="lowlMVVM" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <connections>
                         <segue destination="RMx-3f-FxP" kind="relationship" relationship="masterViewController" id="BlO-5A-QYV"/>
@@ -126,7 +132,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="owlCell" textLabel="xUZ-zU-LUf" imageView="kPv-8q-pdI" style="IBUITableViewCellStyleDefault" id="cPw-4g-bcF">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="owlCell" textLabel="xUZ-zU-LUf" imageView="kPv-8q-pdI" style="IBUITableViewCellStyleDefault" id="cPw-4g-bcF" customClass="OwlTableViewCell" customModule="lowlMVVM" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cPw-4g-bcF" id="loQ-rM-g8g">
